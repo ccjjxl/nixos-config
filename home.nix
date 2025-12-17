@@ -1,0 +1,25 @@
+{ config, pkgs, ... }:
+
+
+{
+	home.username ="ccjjxl";
+	home.homeDirectory ="/home/ccjjxl";
+
+	home.packages = with pkgs;[
+		fzf
+		eza
+	];
+
+	programs.starship = {
+    enable = true;
+    # 自定义配置
+    settings = {
+      add_newline = false;
+		};
+	};
+
+
+
+  home.stateVersion = "24.05";
+
+}
