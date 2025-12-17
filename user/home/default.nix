@@ -6,6 +6,12 @@
 	home.username ="ccjjxl";
 	home.homeDirectory ="/home/ccjjxl";
 
+
+
+ 	imports = [
+    ./modules
+  ];
+
 	home.packages = with pkgs;[
 		fzf
 		eza
