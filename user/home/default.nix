@@ -1,3 +1,4 @@
+
 { config, pkgs, ... }:
 
 
@@ -8,6 +9,12 @@
 	home.packages = with pkgs;[
 		fzf
 		eza
+		bat
+		yazi
+		zoxide
+		fd
+		ripgrep
+		jq
 	];
 
 	programs.starship = {

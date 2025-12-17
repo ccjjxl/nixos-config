@@ -28,7 +28,7 @@
            home-manager.useUserPackages = true;
 
 					 home-manager.users.ccjjxl.imports = [
-					 ./home.nix
+					 ./user/home
 					 ];
 				}
 			];
