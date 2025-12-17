@@ -21,6 +21,7 @@
 		fd
 		ripgrep
 		jq
+		kitty
 	];
 
 	programs.starship = {
@@ -29,6 +30,11 @@
     settings = {
       add_newline = false;
 		};
+	};
+
+	programs.kitty = {
+		enable=true;
+		extraConfig = builtins.readFile ./kitty;
 	};
 
 
